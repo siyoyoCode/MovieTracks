@@ -1,0 +1,24 @@
+{
+  "source": "/Users/siyoyodh/Coding/MooovieTracks/MooovieTracks/ContentView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Fetching movies...",
+        "location": {
+          "startingColumn": 14,
+          "startingLine": 20
+        }
+      },
+      {
+        "comment": "",
+        "key": "Please let git work",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 16
+        }
+      }
+    ]
+  },
+  "version": 1
+}

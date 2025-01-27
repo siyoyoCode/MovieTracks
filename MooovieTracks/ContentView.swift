@@ -16,6 +16,13 @@ struct ContentView: View {
             Text("Please let git work")
         }
         .padding()
+        
+        Text("Fetching movies...")
+                    .onAppear {
+                        Task {
+                            try await plsRun()
+                        }
+                    }
     }
 }
 

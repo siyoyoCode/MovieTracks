@@ -1,0 +1,3 @@
+Target dependency graph (2 targets)
+Target 'MooovieTracks' in project 'MooovieTracks' (no dependencies)
+Target 'MooovieTracks' in project 'MooovieTracks' (no dependencies)

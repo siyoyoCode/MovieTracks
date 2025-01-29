@@ -7,9 +7,10 @@
 
 import Foundation
 
-let apiKey = "f6e0e4a047c413e13c5eb052955ddcf6"
-let oldURL = "https://api.themoviedb.org/3/discover/movie"
+let apiKey = "api key..."
+let oldURL = "https://api.themoviedb.org/movie/1241982-moana-2"
 
+//struct for a single movie
 struct MovieData: Codable {
     
     let title: String
@@ -18,12 +19,19 @@ struct MovieData: Codable {
     
 }
 
-func getMovies() async throws -> MovieData {
-    let endpointURL = "https://api.themoviedb.org/movie/1241982-moana-2?api_key=\(apiKey)"
+//reads the entire list of movies in JSON file
+struct MovieResponse: Codable {
+    let results: [MovieData]
+}
+
+func getMovies() async throws {
+    let endpointURL = "https://api.themoviedb.org/3/discover/movie?api_key=\(apiKey)"
     
     guard let url = URL(string: endpointURL) else {
         throw getMoviesError.invalidURL
     }
+    
+    print("running in movies, got url")
     
     let (data, response) = try await URLSession.shared.data(from: url)
     
@@ -31,9 +39,22 @@ func getMovies() async throws -> MovieData {
         throw getMoviesError.statusNotGood
     }
     
+    print("running after httpsResponse")
+    
     do {
         let decoder = JSONDecoder()
-        return try decoder.decode(MovieData.self, from:data)
+        let movieResponse = try decoder.decode(MovieResponse.self, from:data)
+        
+        print("moves incoming")
+        
+        for movie in movieResponse.results {
+            print("""
+                  Title: \(movie.title)
+                  Overview: \(movie.overview)
+                  Backdrop Path: \(movie.backdrop_path)
+                  """)
+        }
+        
     } catch {
         throw getMoviesError.decoderFailed
     }
@@ -49,8 +70,8 @@ enum getMoviesError: Error {
 
 func plsRun() async throws {
     do {
-        let movies = try await getMovies()
-        print(movies)
+        try await getMovies()
+        print("running in plsRun")
     } catch {
         throw getMoviesError.plsHelp
     }

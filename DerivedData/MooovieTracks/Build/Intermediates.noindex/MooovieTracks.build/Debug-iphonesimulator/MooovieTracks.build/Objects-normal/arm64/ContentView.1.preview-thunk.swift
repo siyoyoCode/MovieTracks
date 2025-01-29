@@ -16,19 +16,17 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: __designTimeString("#7012_0", fallback: "globe"))
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text(__designTimeString("#7012_1", fallback: "Please let git work"))
+            WelcomeScreenView()
         }
-        .padding()
+        .background(Color(hue: __designTimeFloat("#7070_0", fallback: 0.696), saturation: __designTimeFloat("#7070_1", fallback: 0.394), brightness: __designTimeFloat("#7070_2", fallback: 0.34)))
         
-        Text(__designTimeString("#7012_2", fallback: "Fetching movies..."))
-                    .onAppear {
-                        Task {
-                            try await plsRun()
-                        }
-                    }
+//        Text("Fetching movies...")
+//                    .onAppear {
+//                        Task {
+//                            print("before PlsRun")
+//                            try await plsRun()
+//                        }
+//                    }
     }
 }
 

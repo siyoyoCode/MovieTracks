@@ -1,0 +1,16 @@
+{
+  "source": "/Users/siyoyodh/Coding/MooovieTracks/MooovieTracks/Views/WelcomeScreenView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "click here to go to home",
+        "location": {
+          "startingColumn": 71,
+          "startingLine": 26
+        }
+      }
+    ]
+  },
+  "version": 1
+}

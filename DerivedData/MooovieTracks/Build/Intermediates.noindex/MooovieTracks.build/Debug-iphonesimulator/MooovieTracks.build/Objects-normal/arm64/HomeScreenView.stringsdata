@@ -1,0 +1,16 @@
+{
+  "source": "/Users/siyoyodh/Coding/MooovieTracks/MooovieTracks/Views/HomeScreenView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "aloha we are at home!!",
+        "location": {
+          "startingColumn": 14,
+          "startingLine": 11
+        }
+      }
+    ]
+  },
+  "version": 1
+}

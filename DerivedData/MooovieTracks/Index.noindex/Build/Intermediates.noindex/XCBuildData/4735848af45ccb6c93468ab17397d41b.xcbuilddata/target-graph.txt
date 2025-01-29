@@ -1,8 +1,0 @@
-Target dependency graph (5 targets)
-Target 'MooovieTracksUITests' in project 'MooovieTracks' (no dependencies)
-Target 'MooovieTracksUITests' in project 'MooovieTracks'
-➜ Explicit dependency on target 'MooovieTracks' in project 'MooovieTracks'
-Target 'MooovieTracks' in project 'MooovieTracks' (no dependencies)
-Target 'MooovieTracksUITests' in project 'MooovieTracks'
-➜ Explicit dependency on target 'MooovieTracks' in project 'MooovieTracks'
-Target 'MooovieTracks' in project 'MooovieTracks' (no dependencies)

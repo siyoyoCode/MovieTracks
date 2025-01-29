@@ -1,0 +1,68 @@
+{
+  "" : {
+    "diagnostics" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/MooovieTracks-master.dia",
+    "emit-module-dependencies" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/MooovieTracks-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/MooovieTracks-master-emit-module.dia",
+    "swift-dependencies" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/MooovieTracks-master.swiftdeps"
+  },
+  "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  },
+  "/Users/siyoyodh/Coding/MooovieTracks/MooovieTracks/ContentView.swift" : {
+    "const-values" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/ContentView.d",
+    "diagnostics" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/ContentView.dia",
+    "index-unit-output-path" : "/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/ContentView.o",
+    "swift-dependencies" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/ContentView~partial.swiftmodule"
+  },
+  "/Users/siyoyodh/Coding/MooovieTracks/MooovieTracks/Data Models/Movie Data.swift" : {
+    "const-values" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/Movie Data.swiftconstvalues",
+    "dependencies" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/Movie Data.d",
+    "diagnostics" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/Movie Data.dia",
+    "index-unit-output-path" : "/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/Movie Data.o",
+    "llvm-bc" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/Movie Data.bc",
+    "object" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/Movie Data.o",
+    "swift-dependencies" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/Movie Data.swiftdeps",
+    "swiftmodule" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/Movie Data~partial.swiftmodule"
+  },
+  "/Users/siyoyodh/Coding/MooovieTracks/MooovieTracks/MooovieTracksApp.swift" : {
+    "const-values" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/MooovieTracksApp.swiftconstvalues",
+    "dependencies" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/MooovieTracksApp.d",
+    "diagnostics" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/MooovieTracksApp.dia",
+    "index-unit-output-path" : "/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/MooovieTracksApp.o",
+    "llvm-bc" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/MooovieTracksApp.bc",
+    "object" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/MooovieTracksApp.o",
+    "swift-dependencies" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/MooovieTracksApp.swiftdeps",
+    "swiftmodule" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/MooovieTracksApp~partial.swiftmodule"
+  },
+  "/Users/siyoyodh/Coding/MooovieTracks/MooovieTracks/Views/HomeScreenView.swift" : {
+    "const-values" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/HomeScreenView.swiftconstvalues",
+    "dependencies" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/HomeScreenView.d",
+    "diagnostics" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/HomeScreenView.dia",
+    "index-unit-output-path" : "/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/HomeScreenView.o",
+    "llvm-bc" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/HomeScreenView.bc",
+    "object" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/HomeScreenView.o",
+    "swift-dependencies" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/HomeScreenView.swiftdeps",
+    "swiftmodule" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/HomeScreenView~partial.swiftmodule"
+  },
+  "/Users/siyoyodh/Coding/MooovieTracks/MooovieTracks/Views/WelcomeScreenView.swift" : {
+    "const-values" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/WelcomeScreenView.swiftconstvalues",
+    "dependencies" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/WelcomeScreenView.d",
+    "diagnostics" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/WelcomeScreenView.dia",
+    "index-unit-output-path" : "/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/WelcomeScreenView.o",
+    "llvm-bc" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/WelcomeScreenView.bc",
+    "object" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/WelcomeScreenView.o",
+    "swift-dependencies" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/WelcomeScreenView.swiftdeps",
+    "swiftmodule" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/WelcomeScreenView~partial.swiftmodule"
+  }
+}

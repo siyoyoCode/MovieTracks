@@ -6,6 +6,342 @@
 	<integer>11</integer>
 	<key>logs</key>
 	<dict>
+		<key>0CD62D90-10E5-43F4-85C9-9FB034A92BBA</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>0CD62D90-10E5-43F4-85C9-9FB034A92BBA.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MooovieTracks project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MooovieTracks</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MooovieTracks</string>
+			<key>timeStartedRecording</key>
+			<real>759830677.58901894</real>
+			<key>timeStoppedRecording</key>
+			<real>759830680.40003097</real>
+			<key>title</key>
+			<string>Build MooovieTracks</string>
+			<key>uniqueIdentifier</key>
+			<string>0CD62D90-10E5-43F4-85C9-9FB034A92BBA</string>
+		</dict>
+		<key>1740BB10-D8D8-412A-844A-0971E087F060</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>1740BB10-D8D8-412A-844A-0971E087F060.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MooovieTracks project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MooovieTracks</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MooovieTracks</string>
+			<key>timeStartedRecording</key>
+			<real>759688508.52359104</real>
+			<key>timeStoppedRecording</key>
+			<real>759688513.76268995</real>
+			<key>title</key>
+			<string>Build MooovieTracks</string>
+			<key>uniqueIdentifier</key>
+			<string>1740BB10-D8D8-412A-844A-0971E087F060</string>
+		</dict>
+		<key>3F609B55-E4DF-4651-A941-92CFAF029BB5</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>3F609B55-E4DF-4651-A941-92CFAF029BB5.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>1</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MooovieTracks project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MooovieTracks</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MooovieTracks</string>
+			<key>timeStartedRecording</key>
+			<real>759692973.18389904</real>
+			<key>timeStoppedRecording</key>
+			<real>759692976.28855598</real>
+			<key>title</key>
+			<string>Build MooovieTracks</string>
+			<key>uniqueIdentifier</key>
+			<string>3F609B55-E4DF-4651-A941-92CFAF029BB5</string>
+		</dict>
+		<key>45B02351-7E4A-4A97-8FD0-C04F7870E322</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>45B02351-7E4A-4A97-8FD0-C04F7870E322.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MooovieTracks project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MooovieTracks</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build (Automatic) MooovieTracks</string>
+			<key>timeStartedRecording</key>
+			<real>759688577.64893997</real>
+			<key>timeStoppedRecording</key>
+			<real>759688579.043244</real>
+			<key>title</key>
+			<string>Build (Automatic) MooovieTracks</string>
+			<key>uniqueIdentifier</key>
+			<string>45B02351-7E4A-4A97-8FD0-C04F7870E322</string>
+		</dict>
+		<key>4EE0EDA9-50F0-4054-8C92-4E63BE9DA63B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>4EE0EDA9-50F0-4054-8C92-4E63BE9DA63B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MooovieTracks project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MooovieTracks</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MooovieTracks</string>
+			<key>timeStartedRecording</key>
+			<real>759692815.66382003</real>
+			<key>timeStoppedRecording</key>
+			<real>759692817.65189004</real>
+			<key>title</key>
+			<string>Build MooovieTracks</string>
+			<key>uniqueIdentifier</key>
+			<string>4EE0EDA9-50F0-4054-8C92-4E63BE9DA63B</string>
+		</dict>
+		<key>8684D752-C713-4A86-8AB8-798059ED3892</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>8684D752-C713-4A86-8AB8-798059ED3892.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MooovieTracks project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MooovieTracks</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MooovieTracks</string>
+			<key>timeStartedRecording</key>
+			<real>759831817.82496405</real>
+			<key>timeStoppedRecording</key>
+			<real>759831818.67613304</real>
+			<key>title</key>
+			<string>Build MooovieTracks</string>
+			<key>uniqueIdentifier</key>
+			<string>8684D752-C713-4A86-8AB8-798059ED3892</string>
+		</dict>
+		<key>8E127C97-1B86-4167-9216-A0EC66ACDCCA</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>8E127C97-1B86-4167-9216-A0EC66ACDCCA.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MooovieTracks project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MooovieTracks</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MooovieTracks</string>
+			<key>timeStartedRecording</key>
+			<real>759831818.68067205</real>
+			<key>timeStoppedRecording</key>
+			<real>759831819.67646003</real>
+			<key>title</key>
+			<string>Build MooovieTracks</string>
+			<key>uniqueIdentifier</key>
+			<string>8E127C97-1B86-4167-9216-A0EC66ACDCCA</string>
+		</dict>
+		<key>AA2F79E9-9390-4ED2-824B-D33996614E8B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>AA2F79E9-9390-4ED2-824B-D33996614E8B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MooovieTracks project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MooovieTracks</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MooovieTracks</string>
+			<key>timeStartedRecording</key>
+			<real>759689285.93185401</real>
+			<key>timeStoppedRecording</key>
+			<real>759689288.64677799</real>
+			<key>title</key>
+			<string>Build MooovieTracks</string>
+			<key>uniqueIdentifier</key>
+			<string>AA2F79E9-9390-4ED2-824B-D33996614E8B</string>
+		</dict>
 		<key>AB9941AF-706F-4ED1-B351-EEB861DAB128</key>
 		<dict>
 			<key>className</key>
@@ -47,6 +383,90 @@
 			<string>Build MooovieTracks</string>
 			<key>uniqueIdentifier</key>
 			<string>AB9941AF-706F-4ED1-B351-EEB861DAB128</string>
+		</dict>
+		<key>CA39747C-DE85-4B6A-82D4-D028B7E90FAA</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>CA39747C-DE85-4B6A-82D4-D028B7E90FAA.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MooovieTracks project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MooovieTracks</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MooovieTracks</string>
+			<key>timeStartedRecording</key>
+			<real>759831819.70903003</real>
+			<key>timeStoppedRecording</key>
+			<real>759831823.28968894</real>
+			<key>title</key>
+			<string>Build MooovieTracks</string>
+			<key>uniqueIdentifier</key>
+			<string>CA39747C-DE85-4B6A-82D4-D028B7E90FAA</string>
+		</dict>
+		<key>F525BC14-19B0-46A7-9DAC-92C44EFD5A81</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F525BC14-19B0-46A7-9DAC-92C44EFD5A81.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>MooovieTracks project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>MooovieTracks</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build MooovieTracks</string>
+			<key>timeStartedRecording</key>
+			<real>759688895.455145</real>
+			<key>timeStoppedRecording</key>
+			<real>759688899.606969</real>
+			<key>title</key>
+			<string>Build MooovieTracks</string>
+			<key>uniqueIdentifier</key>
+			<string>F525BC14-19B0-46A7-9DAC-92C44EFD5A81</string>
 		</dict>
 	</dict>
 </dict>

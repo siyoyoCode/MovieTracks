@@ -1,2 +1,0 @@
-Target dependency graph (1 target)
-Target 'MooovieTracks' in project 'MooovieTracks' (no dependencies)

@@ -1,0 +1,44 @@
+# Xcode
+.DS_Store
+*.xcworkspace
+xcuserdata/
+*.xcuserstate
+*.moved-aside
+*.swp
+*.lock
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+
+# Build artifacts
+DerivedData/
+Build/
+*.app
+*.ipa
+*.dSYM
+*.xcarchive
+
+# Swift Package Manager
+/.swiftpm
+Package.resolved
+SourcePackages/
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Checkouts
+Carthage/Build
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Bundler
+/.bundle
+/config
+/Gemfile.lock
+

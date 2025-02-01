@@ -6,32 +6,32 @@
         "comment": "",
         "key": "aloha we are at home!!",
         "location": {
-          "startingColumn": 54,
-          "startingLine": 17
+          "startingColumn": 14,
+          "startingLine": 11
         }
       },
       {
         "comment": "",
         "key": "Browse",
         "location": {
-          "startingColumn": 58,
-          "startingLine": 20
+          "startingColumn": 18,
+          "startingLine": 14
         }
       },
       {
         "comment": "",
         "key": "Movie Lists",
         "location": {
-          "startingColumn": 58,
-          "startingLine": 22
+          "startingColumn": 18,
+          "startingLine": 16
         }
       },
       {
         "comment": "",
         "key": "My Account",
         "location": {
-          "startingColumn": 58,
-          "startingLine": 24
+          "startingColumn": 18,
+          "startingLine": 18
         }
       }
     ]

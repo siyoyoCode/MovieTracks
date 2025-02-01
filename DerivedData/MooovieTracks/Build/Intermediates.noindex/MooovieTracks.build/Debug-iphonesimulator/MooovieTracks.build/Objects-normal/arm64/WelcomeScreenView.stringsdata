@@ -4,10 +4,26 @@
     "Localizable": [
       {
         "comment": "",
-        "key": "click here to go to home",
+        "key": "Welcome to Mooovie Tracks!",
+        "location": {
+          "startingColumn": 66,
+          "startingLine": 26
+        }
+      },
+      {
+        "comment": "",
+        "key": "Continue as a guest!",
         "location": {
           "startingColumn": 71,
-          "startingLine": 26
+          "startingLine": 33
+        }
+      },
+      {
+        "comment": "",
+        "key": "Sign in with Google!",
+        "location": {
+          "startingColumn": 72,
+          "startingLine": 43
         }
       }
     ]

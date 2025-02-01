@@ -15,9 +15,26 @@ struct WelcomeScreenView: View {
                 Color(hue: 0.696, saturation: 0.394, brightness: 0.34)
                     .ignoresSafeArea()
 
-                VStack {
+                VStack (spacing: 20){
+                    
+                    Text("Welcome to Mooovie Tracks!")
+                        .font(.system(size: 36, weight: .black, design: .serif))
+                        .bold()
+                        .frame(width: 300, height: 150)
+                        .multilineTextAlignment(.center)
+                        
                     NavigationLink(destination: HomeScreenView()) {
-                        Label("click here to go to home", systemImage: "globe")
+                        Label("Continue as a guest!", systemImage: "person.fill")
+                            .font(.headline)
+                            .foregroundColor(.white)
+                            .frame(width: 300, height: 50)
+                            .background(Color.brown)
+                            .cornerRadius(10)
+                    }
+                    
+                    
+                    NavigationLink(destination: HomeScreenView()) {
+                        Label("Sign in with Google!", systemImage: "globe")
                             .font(.headline)
                             .foregroundColor(.white)
                             .frame(width: 300, height: 50)

@@ -1,0 +1,24 @@
+{
+  "" : {
+    "dependencies" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Index.noindex/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/MooovieTracks-master.d",
+    "diagnostics" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Index.noindex/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/MooovieTracks-master.dia",
+    "emit-module-dependencies" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Index.noindex/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/MooovieTracks-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Index.noindex/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/MooovieTracks-master-emit-module.dia",
+    "swift-dependencies" : "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Index.noindex/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/Objects-normal/arm64/MooovieTracks-master.swiftdeps"
+  },
+  "/Users/siyoyodh/Coding/MooovieTracks/DerivedData/MooovieTracks/Index.noindex/Build/Intermediates.noindex/MooovieTracks.build/Debug-iphonesimulator/MooovieTracks.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+
+  },
+  "/Users/siyoyodh/Coding/MooovieTracks/MooovieTracks/Data Models/Movie Data.swift" : {
+
+  },
+  "/Users/siyoyodh/Coding/MooovieTracks/MooovieTracks/MooovieTracksApp.swift" : {
+
+  },
+  "/Users/siyoyodh/Coding/MooovieTracks/MooovieTracks/Views/HomeScreenView.swift" : {
+
+  },
+  "/Users/siyoyodh/Coding/MooovieTracks/MooovieTracks/Views/WelcomeScreenView.swift" : {
+
+  }
+}

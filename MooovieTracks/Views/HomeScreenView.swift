@@ -12,34 +12,17 @@ struct HomeScreenView: View {
         
         HStack(spacing: 10){
             Text("Browse")
-                .font(.system(size: 12, weight: .black, design: .serif))
-                .bold()
-                .frame(width: 100, height: 50)
-                .multilineTextAlignment(.center)
-                .foregroundColor(.white)
-                .background(Color.brown)
-                .cornerRadius(15)
+                .modifier(HomescreenButtonStyle())
             
             Text("Movie Lists")
-                .font(.system(size: 12, weight: .black, design: .serif))
-                .bold()
-                .frame(width: 100, height: 50)
-                .multilineTextAlignment(.center)
-                .foregroundColor(.white)
-                .background(Color.brown)
-                .cornerRadius(15)
+                .modifier(HomescreenButtonStyle())
             
             Text("My Account")
-                .font(.system(size: 12, weight: .black, design: .serif))
-                .bold()
-                .frame(width: 100, height: 50)
-                .multilineTextAlignment(.center)
-                .foregroundColor(.white)
-                .background(Color.brown)
-                .cornerRadius(15)
+                .modifier(HomescreenButtonStyle())
         }
     }
 }
+
 
 #Preview {
     HomeScreenView()

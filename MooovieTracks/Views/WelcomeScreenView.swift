@@ -12,8 +12,7 @@ struct WelcomeScreenView: View {
         NavigationStack { //needed to navigate between views
             ZStack {
                 //set background color
-                Color(hue: 0.696, saturation: 0.394, brightness: 0.34)
-                    .ignoresSafeArea()
+                Color.deepPurple.ignoresSafeArea()
 
                 VStack (spacing: 20){
                     

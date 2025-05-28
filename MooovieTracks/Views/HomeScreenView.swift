@@ -8,17 +8,20 @@ import SwiftUI
 
 struct HomeScreenView: View {
     var body: some View {
-        Text("aloha we are at home!!")
         
-        HStack(spacing: 10){
-            Text("Browse")
-                .modifier(HomescreenButtonStyle())
+        VStack(alignment: .center, spacing: 10) {
+            ScrollTrendableMoviesView()
             
-            Text("Movie Lists")
-                .modifier(HomescreenButtonStyle())
-            
-            Text("My Account")
-                .modifier(HomescreenButtonStyle())
+            HStack(spacing: 10){
+                Text("Browse")
+                    .modifier(HomescreenButtonStyle())
+                
+                Text("Movie Lists")
+                    .modifier(HomescreenButtonStyle())
+                
+                Text("My Account")
+                    .modifier(HomescreenButtonStyle())
+            }
         }
     }
 }

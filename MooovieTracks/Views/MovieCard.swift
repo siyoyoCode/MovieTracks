@@ -11,47 +11,58 @@ struct MovieCard: View {
     let movie: MovieData
     
     var body: some View {
-        VStack(alignment: .leading){
+        HStack(alignment: .top) {
             AsyncImage(url: URL(string: "https://image.tmdb.org/t/p/w500\(movie.poster_path)"))
             { image in image
                     .resizable()
-                    .aspectRatio(contentMode: .fill)
+                    .aspectRatio(contentMode: .fit)
             } placeholder: {
                 Color.gray.opacity(0.3)
             }
-            .frame(width: 250, height: 150)
-            .clipped()
             .cornerRadius(10)
+            .frame(width: 150, height: 200)
             
-            Text(movie.title)
-                .font(.headline)
-                .lineLimit(1)
-                .padding(.top, 4)
+            VStack(alignment: .leading) {
+                Text(movie.title)
+                    .font(.headline)
+                    .lineLimit(2)
+                    .padding(.vertical, 10)
 
-            Text(movie.overview)
-                .font(.caption)
-                .lineLimit(2)
-                .foregroundColor(.secondary)
+                Text(movie.overview)
+                    .font(.caption)
+                    .lineLimit(9)
+                    .foregroundColor(.secondary)
+            }
+            .padding(.horizontal, 10)
         }
+        .frame(width: UIScreen.main.bounds.width * 0.90) // responsive card width
+        .padding(.all, 10)
     }
 }
 
-struct ContentView: View {
+struct ScrollTrendableMoviesView: View {
     @State var moviesList: [MovieData] = []
 
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 12) {
-                ForEach(moviesList) {movies in
-                    MovieCard(movie: movies)
+        VStack(alignment: .leading) {
+            Text("Trending Movies")
+                .font(.largeTitle)
+                .fontWeight(.semibold)
+                .padding(.all, 10)
+                .foregroundColor(Color.deepPurple)
+            
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 12) {
+                    ForEach(moviesList) {movies in
+                        MovieCard(movie: movies)
+                    }
                 }
+                .padding()
             }
-            .padding()
         }
         .onAppear {
             Task {
                 do {
-                    // You should modify plsRun() to return [MovieData]
                     self.moviesList = try await getTrendingMovies()
                 } catch {
                     print("Failed in getTrendingMovies: \(error)")
@@ -61,6 +72,13 @@ struct ContentView: View {
     }
 }
 
+let exampleMovie = MovieData(
+    title: "Inception",
+    overview: "Cobb, a skilled thief who commits corporate espionage by infiltrating the subconscious of his targets is offered a chance to regain his old life as payment for a task considered to be impossible: \"inception\", the implantation of another person's idea into a target's subconscious.",
+    poster_path: "/6WxhEvFsauuACfv8HyoVX6mZKFj.jpg",
+    id: 42
+)
+
 #Preview {
-    ContentView()
+    ScrollTrendableMoviesView()
 }

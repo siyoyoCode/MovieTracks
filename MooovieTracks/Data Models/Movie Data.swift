@@ -27,8 +27,6 @@ struct MovieData: Codable, Identifiable {
     
     let title: String
     let overview: String
-    let startDate: Date?
-    let endDate: Date?
     let poster_path: String
     let id: Int
     

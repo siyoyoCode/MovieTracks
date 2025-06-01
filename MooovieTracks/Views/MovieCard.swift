@@ -21,6 +21,7 @@ struct MovieCard: View {
             }
             .cornerRadius(10)
             .frame(width: 150, height: 200)
+            .padding(.vertical, 10)
             
             VStack(alignment: .leading) {
                 Text(movie.title)
@@ -37,6 +38,8 @@ struct MovieCard: View {
         }
         .frame(width: UIScreen.main.bounds.width * 0.90) // responsive card width
         .padding(.all, 10)
+        .background(Color.gray.opacity(0.3))
+        .cornerRadius(10)
     }
 }
 
@@ -51,14 +54,20 @@ struct ScrollTrendableMoviesView: View {
                 .padding(.all, 10)
                 .foregroundColor(Color.deepPurple)
             
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 12) {
-                    ForEach(moviesList) {movies in
-                        MovieCard(movie: movies)
-                    }
-                }
-                .padding()
+//            ScrollView(.horizontal, showsIndicators: false) {
+//                HStack(spacing: 12) {
+//                    ForEach(moviesList) {movies in
+//                        MovieCard(movie: movies)
+//                    }
+//                }
+//                .padding()
+//            }
+            
+            TabView {
+                ForEach(moviesList) {movies in
+                    MovieCard(movie: movies)}
             }
+            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
         }
         .onAppear {
             Task {

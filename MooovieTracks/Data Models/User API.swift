@@ -8,13 +8,13 @@ import Foundation
 
 struct userData: Codable {
     let id: Int?
-    let sessionId: String?
     let name: String?
     let username: String?
 }
 
 struct authData: Codable {
     let request_token: String
+    let session_id: String
 }
 
 func getRequestToken() async throws -> String {
@@ -41,24 +41,32 @@ func getRequestToken() async throws -> String {
     }
 }
 
-func getSessionID() async throws -> String {
+func getSessionID(request_token: String) async throws -> String {
     
-    let request_token = try await getRequestToken()
+    //variables
     let startSessionURL = "https://api.themoviedb.org/3/authentication/session/new"
-    
+    let url = URL(string: startSessionURL)!
     let parameters = ["request_token": request_token] as [String : Any?]
     
+    //API vars
     let postData = try JSONSerialization.data(withJSONObject: parameters, options: [])
-    
-    let url = URL(string: startSessionURL)!
     var request = URLRequest(url: url)
-    request.httpBody = postData //the data that is sent as part of the API call
+    
+    //data that is sent to tmdb as part of  API call
+    request.httpBody = postData
     
     //recieve data
-    let (data, response) = try await URLSession.shared.data(from: url)
+    let (data, _) = try await URLSession.shared.data(from: url)
     
-    return "hello, TODO: fix"
-
+    //decode data
+    do {
+        let decoder = JSONDecoder()
+        let authUserResponse = try decoder.decode(authData.self, from: data)
+        
+        print("session id: \(authUserResponse.session_id)")
+        
+        return authUserResponse.session_id
+    }
 }
 
 enum authUserError: Error {

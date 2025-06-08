@@ -7,6 +7,16 @@
 
 import Foundation
 
+//struct for a single movie
+struct MovieData: Codable, Identifiable {
+    
+    let title: String
+    let overview: String
+    let poster_path: String
+    let id: Int
+    
+}
+
 //reads the entire list of movies in JSON file
 struct trendingMoviesResponse: Codable {
     let results: [MovieData]

@@ -26,4 +26,14 @@ struct HomescreenButtonStyle: ViewModifier {
     }
 }
 
+struct WelcomeScreenButtonStyle: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.headline)
+            .foregroundColor(.white)
+            .frame(width: 300, height: 50)
+            .background(Color.brown)
+            .cornerRadius(10)
+    }
+}
 

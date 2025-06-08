@@ -45,7 +45,6 @@ struct MovieCard: View {
 
 struct ScrollTrendableMoviesView: View {
     @State var moviesList: [MovieData] = []
-    @State var request_token: String = ""
 
     var body: some View {
         VStack(alignment: .leading) {
@@ -67,13 +66,6 @@ struct ScrollTrendableMoviesView: View {
                     self.moviesList = try await getTrendingMovies()
                 } catch {
                     print("Failed in getTrendingMovies: \(error)")
-                }
-                
-                do {
-                    self.request_token = try await
-                        authenticateUser()
-                } catch {
-                    print("failed to auth user:\(error)")
                 }
             }
         }

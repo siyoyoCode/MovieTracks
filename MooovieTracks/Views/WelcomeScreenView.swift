@@ -8,7 +8,12 @@
 import SwiftUI
 
 struct WelcomeScreenView: View {
+    @State var request_token: String = ""
+    @State private var authURL: URL? = nil
+
+    
     var body: some View {
+        
         NavigationStack { //needed to navigate between views
             ZStack {
                 //set background color
@@ -23,25 +28,35 @@ struct WelcomeScreenView: View {
                         .multilineTextAlignment(.center)
                         
                     NavigationLink(destination: HomeScreenView()) {
-                        Label("Continue as a guest!", systemImage: "person.fill")
-                            .font(.headline)
-                            .foregroundColor(.white)
-                            .frame(width: 300, height: 50)
-                            .background(Color.brown)
-                            .cornerRadius(10)
+                        Label("Continue as a guest!", systemImage: "movieclapper.fill")
+                            .modifier(WelcomeScreenButtonStyle())
                     }
                     
+//                    NavigationLink(destination: url) {
+//                        Label("Login with TMDB!", systemImage: "globe")
+//                            .modifier(HomescreenButtonStyle())
+//                            .onTapGesture {
+//                                Task {
+//                                    let request_token = try await getRequestToken()
+//                                }
+//                            }
+//                    }
                     
-                    NavigationLink(destination: HomeScreenView()) {
-                        Label("Sign in with Google!", systemImage: "globe")
-                            .font(.headline)
-                            .foregroundColor(.white)
-                            .frame(width: 300, height: 50)
-                            .background(Color.brown)
-                            .cornerRadius(10)
+                    //button for logging into tmdb
+                    Button {
+                        Task {
+                            self.request_token = try await getRequestToken()
+                            if let url = URL(string: "https://www.themoviedb.org/authenticate/\(request_token)") {
+                                authURL = url
+                                await UIApplication.shared.open(url)
+                            }
+                        }
+                    } label: {
+                        Label("Login with TMDB!", systemImage: "person.fill")
+                            .modifier(WelcomeScreenButtonStyle())
                     }
                 }
-                .frame(maxWidth: .infinity, maxHeight: .infinity) // Ensures the content fills the screen
+                .frame(maxWidth: .infinity, maxHeight: .infinity) // ensures the content fills the screen
             } //z-stack
         } //nav stack
     }

@@ -12,8 +12,11 @@ struct userData: Codable {
     let username: String?
 }
 
-struct authData: Codable {
+struct requestTokenData: Codable {
     let request_token: String
+}
+
+struct sessionData: Codable {
     let session_id: String
 }
 
@@ -30,7 +33,7 @@ func getRequestToken() async throws -> String {
     do {
         //decode data
         let decoder = JSONDecoder()
-        let authUserResponse = try decoder.decode(authData.self, from: data)
+        let authUserResponse = try decoder.decode(requestTokenData.self, from: data)
         
         print("request_token: \(authUserResponse.request_token)")
         
@@ -61,7 +64,7 @@ func getSessionID(request_token: String) async throws -> String {
     //decode data
     do {
         let decoder = JSONDecoder()
-        let authUserResponse = try decoder.decode(authData.self, from: data)
+        let authUserResponse = try decoder.decode(sessionData.self, from: data)
         
         print("session id: \(authUserResponse.session_id)")
         

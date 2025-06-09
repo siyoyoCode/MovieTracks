@@ -9,8 +9,10 @@ import SwiftUI
 
 struct WelcomeScreenView: View {
     @State var request_token: String = ""
-    @State private var authURL: URL? = nil
-
+    @State var authURL: URL? = nil
+    @State var session_id: String = ""
+    
+    var callback: String = "mooovietracks://auth-success"
     
     var body: some View {
         
@@ -32,24 +34,17 @@ struct WelcomeScreenView: View {
                             .modifier(WelcomeScreenButtonStyle())
                     }
                     
-//                    NavigationLink(destination: url) {
-//                        Label("Login with TMDB!", systemImage: "globe")
-//                            .modifier(HomescreenButtonStyle())
-//                            .onTapGesture {
-//                                Task {
-//                                    let request_token = try await getRequestToken()
-//                                }
-//                            }
-//                    }
-                    
                     //button for logging into tmdb
                     Button {
                         Task {
+                            print("running button")
                             self.request_token = try await getRequestToken()
-                            if let url = URL(string: "https://www.themoviedb.org/authenticate/\(request_token)") {
-                                authURL = url
-                                await UIApplication.shared.open(url)
+                            
+                            //sets url
+                            if let authURL = URL(string: "https://www.themoviedb.org/authenticate/\(request_token)?redirect_to=\(callback)") {
+                                await UIApplication.shared.open(authURL)
                             }
+                            
                         }
                     } label: {
                         Label("Login with TMDB!", systemImage: "person.fill")
@@ -57,6 +52,16 @@ struct WelcomeScreenView: View {
                     }
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity) // ensures the content fills the screen
+                .onOpenURL { url in
+                    if url.scheme == "mooovietracks", url.host == "auth-success" {
+                        print("redirect received from TMDB!")
+                        Task {
+                            print("doing task for onOpenURL)")
+                            try? await session_id = getSessionID(request_token: request_token)
+                        }
+                    }
+                }
+
             } //z-stack
         } //nav stack
     }

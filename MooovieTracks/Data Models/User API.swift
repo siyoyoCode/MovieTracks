@@ -53,18 +53,25 @@ func getSessionID(request_token: String) async throws -> String {
     
     //API vars
     let postData = try JSONSerialization.data(withJSONObject: parameters, options: [])
+    print("postdata: \(postData)")
     var request = URLRequest(url: url)
     
     //data that is sent to tmdb as part of  API call
     request.httpBody = postData
+    request.httpMethod = "POST"
+    request.addValue("Bearer \(apiAccessToken)", forHTTPHeaderField: "Authorization")
+    request.addValue("application/json", forHTTPHeaderField: "Content-Type")
     
     //recieve data
-    let (data, _) = try await URLSession.shared.data(from: url)
+    let (data, _) = try await URLSession.shared.data(for: request)
+    print("stuck here 1")
     
     //decode data
     do {
+        print("stuck here 2")
         let decoder = JSONDecoder()
         let authUserResponse = try decoder.decode(sessionData.self, from: data)
+        print("Stuck here 3")
         
         print("session id: \(authUserResponse.session_id)")
         

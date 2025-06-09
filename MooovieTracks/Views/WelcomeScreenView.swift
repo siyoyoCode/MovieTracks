@@ -56,8 +56,8 @@ struct WelcomeScreenView: View {
                     if url.scheme == "mooovietracks", url.host == "auth-success" {
                         print("redirect received from TMDB!")
                         Task {
-                            print("doing task for onOpenURL)")
-                            try? await session_id = getSessionID(request_token: request_token)
+                            print("doing task for onOpenURL")
+                            try await session_id = getSessionID(request_token: request_token)
                         }
                     }
                 }

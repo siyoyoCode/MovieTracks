@@ -24,7 +24,7 @@ func getRequestToken() async throws -> String {
     let requestTokenUrl = "https://api.themoviedb.org/3/authentication/token/new?api_key=\(apiKey)"
     
     guard let url = URL(string: requestTokenUrl) else {
-        throw authUserError.invalidURL
+        throw APIError.invalidURL
     }
     
     //fetch data
@@ -40,7 +40,7 @@ func getRequestToken() async throws -> String {
         //returns request token
         return authUserResponse.request_token
     } catch {
-        throw authUserError.decoderFailed
+        throw APIError.decoderFailed
     }
 }
 
@@ -64,23 +64,14 @@ func getSessionID(request_token: String) async throws -> String {
     
     //recieve data
     let (data, _) = try await URLSession.shared.data(for: request)
-    print("stuck here 1")
     
     //decode data
     do {
-        print("stuck here 2")
         let decoder = JSONDecoder()
         let authUserResponse = try decoder.decode(sessionData.self, from: data)
-        print("Stuck here 3")
         
         print("session id: \(authUserResponse.session_id)")
         
         return authUserResponse.session_id
     }
-}
-
-enum authUserError: Error {
-    case invalidURL
-    case statusNotGood
-    case decoderFailed
 }

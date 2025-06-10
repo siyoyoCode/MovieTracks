@@ -7,16 +7,6 @@
 
 import Foundation
 
-//struct for a single movie
-struct MovieData: Codable, Identifiable {
-    
-    let title: String
-    let overview: String
-    let poster_path: String
-    let id: Int
-    
-}
-
 //reads the entire list of movies in JSON file
 struct trendingMoviesResponse: Codable {
     let results: [MovieData]
@@ -27,7 +17,7 @@ func getTrendingMovies() async throws -> [MovieData] {
     let endpointURL = "https://api.themoviedb.org/3/discover/movie?api_key=\(apiKey)"
     
     guard let url = URL(string: endpointURL) else {
-        throw getMoviesError.invalidURL
+        throw APIError.invalidURL
     }
     
     print("running in movies, got url")
@@ -37,7 +27,7 @@ func getTrendingMovies() async throws -> [MovieData] {
     
     //checks status
     guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
-        throw getMoviesError.statusNotGood
+        throw APIError.statusNotGood
     }
     
     print("running after httpsResponse")
@@ -47,7 +37,6 @@ func getTrendingMovies() async throws -> [MovieData] {
         let decoder = JSONDecoder()
         let movieResponse = try decoder.decode(trendingMoviesResponse.self, from:data)
         
-        print("movies incoming")
         for movie in movieResponse.results {
             print("""
                   Title: \(movie.title)
@@ -60,13 +49,6 @@ func getTrendingMovies() async throws -> [MovieData] {
         return movieResponse.results
         
     } catch {
-        throw getMoviesError.decoderFailed
+        throw APIError.decoderFailed
     }
-}
-
-//possible errors to pass
-enum getMoviesError: Error {
-    case invalidURL
-    case statusNotGood
-    case decoderFailed
 }

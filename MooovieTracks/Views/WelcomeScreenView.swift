@@ -11,6 +11,7 @@ struct WelcomeScreenView: View {
     @State var request_token: String = ""
     @State var authURL: URL? = nil
     @State var session_id: String = ""
+    @State var account_id: Int = 0
     
     var callback: String = "mooovietracks://auth-success"
     
@@ -39,6 +40,7 @@ struct WelcomeScreenView: View {
                         Task {
                             print("running button")
                             self.request_token = try await getRequestToken()
+                            UserDefaults.standard.set(request_token, forKey: "requestToken")
                             
                             //sets url
                             if let authURL = URL(string: "https://www.themoviedb.org/authenticate/\(request_token)?redirect_to=\(callback)") {
@@ -58,6 +60,9 @@ struct WelcomeScreenView: View {
                         Task {
                             print("doing task for onOpenURL")
                             try await session_id = getSessionID(request_token: request_token)
+                            UserDefaults.standard.set(session_id, forKey: "sessionID")
+                            try await account_id = getAccountID(sessionID: session_id)
+                            UserDefaults.standard.set(account_id, forKey: "accountID")
                         }
                     }
                 }

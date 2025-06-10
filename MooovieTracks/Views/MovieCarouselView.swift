@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// configures view for a single movie
 struct MovieCard: View {
     let movie: MovieData
     
@@ -43,33 +44,36 @@ struct MovieCard: View {
     }
 }
 
-struct ScrollTrendableMoviesView: View {
+struct MovieCarouselView: View {
     @State var moviesList: [MovieData] = []
-
+    let movieType: MovieType
+    
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("Trending Movies")
-                .font(.largeTitle)
-                .fontWeight(.semibold)
-                .padding(.all, 10)
-                .foregroundColor(Color.deepPurple)
-            
-            TabView {
-                ForEach(moviesList) {movies in
-                    MovieCard(movie: movies)}
+        TabView {
+            ForEach(moviesList) {
+                movies in MovieCard(movie: movies)
             }
-            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
         }
+        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
         .onAppear {
             Task {
-                do {
-                    self.moviesList = try await getTrendingMovies()
-                } catch {
-                    print("Failed in getTrendingMovies: \(error)")
+                switch movieType {
+                    case .watchlist:
+                        self.moviesList = try await getTrendingMovies() //FIX
+                    case .trending:
+                        self.moviesList = try await getTrendingMovies()
+                    case .continueWatching:
+                        self.moviesList = try await getTrendingMovies() //FIX
                 }
             }
         }
     }
+}
+
+enum MovieType {
+    case trending
+    case watchlist
+    case continueWatching
 }
 
 let exampleMovie = MovieData(
@@ -80,5 +84,5 @@ let exampleMovie = MovieData(
 )
 
 #Preview {
-    ScrollTrendableMoviesView()
+    MovieCarouselView(movieType: .trending)
 }

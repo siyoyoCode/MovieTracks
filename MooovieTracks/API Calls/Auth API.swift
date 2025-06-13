@@ -6,12 +6,6 @@
 //
 import Foundation
 
-struct userData: Codable {
-    let id: Int?
-    let name: String?
-    let username: String?
-}
-
 struct requestTokenData: Codable {
     let request_token: String
 }
@@ -75,3 +69,4 @@ func getSessionID(request_token: String) async throws -> String {
         return authUserResponse.session_id
     }
 }
+

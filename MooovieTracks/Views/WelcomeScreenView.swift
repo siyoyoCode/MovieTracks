@@ -59,8 +59,12 @@ struct WelcomeScreenView: View {
                         print("redirect received from TMDB!")
                         Task {
                             print("doing task for onOpenURL")
+                            
+                            //start session id + set user defaults
                             try await session_id = getSessionID(request_token: request_token)
                             UserDefaults.standard.set(session_id, forKey: "sessionID")
+                            
+                            //get account id + set user defaults
                             try await account_id = getAccountID(sessionID: session_id)
                             UserDefaults.standard.set(account_id, forKey: "accountID")
                         }

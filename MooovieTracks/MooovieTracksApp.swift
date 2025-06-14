@@ -13,7 +13,7 @@ struct MooovieTracksApp: App {
     
     var body: some Scene {
         WindowGroup {
-            WelcomeScreenView()
+            ContentView()
                 .environmentObject(userSession)
         }
     }

@@ -8,15 +8,8 @@
 import SwiftUI
 
 struct WelcomeScreenView: View {
-//    @State var request_token: String = ""
-//    @State var authURL: URL? = nil
-//    @State var session_id: String = ""
-//    @State var account_id: Int = 0
-    
     @EnvironmentObject var userSession: UserSession
-    
-//    var callback: String = "mooovietracks://auth-success"
-    
+        
     var body: some View {
         
         NavigationStack { //needed to navigate between views
@@ -39,9 +32,11 @@ struct WelcomeScreenView: View {
                     
                     //button for logging into tmdb
                     Button {
+                        
                         Task {
                              try await userSession.initializeLogIn()
                         }
+                        
                     } label: {
                         Label("Login with TMDB!", systemImage: "person.fill")
                             .modifier(WelcomeScreenButtonStyle())
@@ -55,12 +50,10 @@ struct WelcomeScreenView: View {
                         }
                     }
                 }
-
             } //z-stack
         } //nav stack
     }
 }
-
 
 #Preview {
     WelcomeScreenView()

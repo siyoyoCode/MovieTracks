@@ -59,7 +59,7 @@ struct MovieCarouselView: View {
             Task {
                 switch movieType {
                     case .watchlist:
-                        self.moviesList = try await getTrendingMovies() //FIX
+                    self.moviesList = try await getWatchlist(accountID: UserDefaults.standard.integer(forKey: "accountID"), sessionID: UserDefaults.standard.string(forKey: "sessionID")!)
                     case .trending:
                         self.moviesList = try await getTrendingMovies()
                     case .continueWatching:

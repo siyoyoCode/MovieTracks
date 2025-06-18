@@ -37,3 +37,13 @@ struct WelcomeScreenButtonStyle: ViewModifier {
     }
 }
 
+struct HomeScreenHeadingStyle: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.largeTitle)
+            .fontWeight(.semibold)
+            .padding(.all, 10)
+            .foregroundColor(Color.deepPurple)
+    }
+}
+

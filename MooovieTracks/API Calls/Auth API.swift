@@ -7,11 +7,11 @@
 import Foundation
 import SwiftUI
 
-struct requestTokenData: Codable {
+struct RequestTokenData: Codable {
     let request_token: String
 }
 
-struct sessionData: Codable {
+struct SessionData: Codable {
     let session_id: String
 }
 
@@ -28,7 +28,7 @@ func getRequestToken() async throws -> String {
     do {
         //decode data
         let decoder = JSONDecoder()
-        let response = try decoder.decode(requestTokenData.self, from: data)
+        let response = try decoder.decode(RequestTokenData.self, from: data)
         
         print("request_token: \(response.request_token)")
         
@@ -63,7 +63,7 @@ func getSessionID(request_token: String) async throws -> String {
     //decode data
     do {
         let decoder = JSONDecoder()
-        let response = try decoder.decode(sessionData.self, from: data)
+        let response = try decoder.decode(SessionData.self, from: data)
         
         print("session id: \(response.session_id)")
         

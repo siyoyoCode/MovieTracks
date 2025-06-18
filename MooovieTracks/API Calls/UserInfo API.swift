@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct accountData: Codable {
+struct AccountData: Codable {
     let id: Int
     //let username: String
 }
@@ -25,7 +25,7 @@ func getAccountID(sessionID: String) async throws -> Int {
     
     do {
         let decoder = JSONDecoder()
-        let response = try decoder.decode(accountData.self, from: data)
+        let response = try decoder.decode(AccountData.self, from: data)
         print("Account ID: \(response.id)")
         return response.id
     }

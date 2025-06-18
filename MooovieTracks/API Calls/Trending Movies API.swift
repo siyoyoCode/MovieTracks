@@ -8,7 +8,7 @@
 import Foundation
 
 //reads the entire list of movies in JSON file
-struct trendingMoviesResponse: Codable {
+struct MoviesResponseArray: Codable {
     let results: [MovieData]
 }
 
@@ -35,7 +35,7 @@ func getTrendingMovies() async throws -> [MovieData] {
     //decodes data into acceptable format
     do {
         let decoder = JSONDecoder()
-        let movieResponse = try decoder.decode(trendingMoviesResponse.self, from:data)
+        let movieResponse = try decoder.decode(MoviesResponseArray.self, from:data)
         
         for movie in movieResponse.results {
             print("""

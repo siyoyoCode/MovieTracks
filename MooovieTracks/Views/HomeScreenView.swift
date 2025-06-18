@@ -11,12 +11,14 @@ struct HomeScreenView: View {
         
         VStack(alignment: .center, spacing: 10) {
             Text("Trending Movies")
-                .font(.largeTitle)
-                .fontWeight(.semibold)
-                .padding(.all, 10)
-                .foregroundColor(Color.deepPurple)
+                .modifier(HomeScreenHeadingStyle())
             
             MovieCarouselView(movieType: .trending)
+            
+            Text("Personal Watchlist") //TODO: insert user's name (Siyona's Watchlist)
+                .modifier(HomeScreenHeadingStyle())
+
+            MovieCarouselView(movieType: .watchlist)
             
             HStack(spacing: 10){
                 Text("Browse")

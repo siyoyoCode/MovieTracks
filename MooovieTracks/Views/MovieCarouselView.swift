@@ -76,7 +76,7 @@ enum MovieType {
     case continueWatching
 }
 
-let exampleMovie = MovieData(
+private let sampleMovie = MovieData(
     title: "Inception",
     overview: "Cobb, a skilled thief who commits corporate espionage by infiltrating the subconscious of his targets is offered a chance to regain his old life as payment for a task considered to be impossible: \"inception\", the implantation of another person's idea into a target's subconscious.",
     poster_path: "/6WxhEvFsauuACfv8HyoVX6mZKFj.jpg",

@@ -10,8 +10,10 @@ import SwiftUI
 // configures view for a single movie
 struct MovieCard: View {
     let movie: MovieData
+    let onSelect: () -> Void //a fxn must be passed into MovieCard
     
     var body: some View {
+        
         HStack(alignment: .top) {
             AsyncImage(url: URL(string: "https://image.tmdb.org/t/p/w500\(movie.poster_path)"))
             { image in image
@@ -37,24 +39,33 @@ struct MovieCard: View {
             }
             .padding(.horizontal, 10)
         }
-        .frame(width: UIScreen.main.bounds.width * 0.90) // responsive card width
+        .frame(width: UIScreen.main.bounds.width * 0.85) // responsive card width
         .padding(.all, 10)
         .background(Color.gray.opacity(0.3))
         .cornerRadius(10)
+        .onTapGesture{
+            onSelect()
+        }
     }
 }
 
 struct MovieCarouselView: View {
     @State var moviesList: [MovieData] = []
+    @State var selectedMovie: MovieData? = nil
     let movieType: MovieType
     
     var body: some View {
-        TabView {
-            ForEach(moviesList) {
-                movies in MovieCard(movie: movies)
+        NavigationStack{
+            TabView {
+                ForEach(moviesList) {
+                    movie in MovieCard(movie: movie, onSelect: {selectedMovie = movie})
+                }
+            }
+            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
+            .navigationDestination(item: $selectedMovie) {
+                movie in MovieDetailsView(movie: movie)
             }
         }
-        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
         .onAppear {
             Task {
                 switch movieType {

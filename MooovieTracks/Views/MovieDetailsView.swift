@@ -11,6 +11,7 @@ struct MovieDetailsView: View {
     let movie: MovieData
 
     var body: some View {
+        
         VStack{
             AsyncImage(url: URL(string: "https://image.tmdb.org/t/p/w500\(movie.poster_path)"))
             { image in image
@@ -34,7 +35,7 @@ struct MovieDetailsView: View {
             }
         }
         .frame(width: UIScreen.main.bounds.width * 0.9) //automatically configures to users width
-        
+
     }
 }
 

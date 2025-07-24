@@ -30,10 +30,25 @@ struct SearchView: View {
                             print("API Search Database failed")
                         }
                     }
+                    
+                    
                 }
         }
         .padding()
         
+        //displays resulting movies
+        if !searchResults.isEmpty {
+            
+            VStack {
+                Text("Results:")
+                    .font(.callout)
+                    .foregroundColor(.secondary)
+
+                    
+                MovieScrollerView(movieSearchResults: searchResults)
+
+            }
+        }
     }
         
 }

@@ -12,21 +12,27 @@ struct SearchView: View {
     @State private var searchResults: [MovieData] = []
     
     var body: some View {
-        TextField("What movie are you looking for?", text: $userSearch)
-            .textFieldStyle(.roundedBorder)
-            .padding()
-            .onSubmit {
-                Task {
-                    do {
-                        searchResults = try await searchDatabase(userQuery: userSearch)
-                        for movie in searchResults {
-                            print("title: \(movie.title)")
+    
+        HStack{
+            Image(systemName: "magnifyingglass.circle.fill")
+                .foregroundColor(.gray)
+                
+            TextField("What movie are you looking for?", text: $userSearch)
+                .textFieldStyle(.roundedBorder)
+                .onSubmit {
+                    Task {
+                        do {
+                            searchResults = try await searchDatabase(userQuery: userSearch)
+                            for movie in searchResults {
+                                print("title: \(movie.title)")
+                            }
+                        } catch {
+                            print("API Search Database failed")
                         }
-                    } catch {
-                        print("API Search Database failed")
                     }
                 }
-            }
+        }
+        .padding()
         
     }
         

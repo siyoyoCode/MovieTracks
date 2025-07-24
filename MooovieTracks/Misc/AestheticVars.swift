@@ -26,6 +26,18 @@ struct HomescreenButtonStyle: ViewModifier {
     }
 }
 
+//home screen heading
+struct HomeScreenHeadingStyle: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.largeTitle)
+            .fontWeight(.semibold)
+            .padding(.all, 10)
+            .foregroundColor(Color.deepPurple)
+    }
+}
+
+//welcome screen buttons
 struct WelcomeScreenButtonStyle: ViewModifier {
     func body(content: Content) -> some View {
         content
@@ -37,13 +49,10 @@ struct WelcomeScreenButtonStyle: ViewModifier {
     }
 }
 
-struct HomeScreenHeadingStyle: ViewModifier {
-    func body(content: Content) -> some View {
-        content
-            .font(.largeTitle)
-            .fontWeight(.semibold)
-            .padding(.all, 10)
-            .foregroundColor(Color.deepPurple)
-    }
-}
-
+//sample movie for previews
+let sampleMovie1 = MovieData(
+    title: "Inception",
+    overview: "Cobb, a skilled thief who commits corporate espionage by infiltrating the subconscious of his targets is offered a chance to regain his old life as payment for a task considered to be impossible: \"inception\", the implantation of another person's idea into a target's subconscious.",
+    poster_path: "/6WxhEvFsauuACfv8HyoVX6mZKFj.jpg",
+    id: 42
+)

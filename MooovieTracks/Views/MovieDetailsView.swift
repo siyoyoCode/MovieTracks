@@ -13,16 +13,7 @@ struct MovieDetailsView: View {
     var body: some View {
         
         VStack{
-            AsyncImage(url: URL(string: "https://image.tmdb.org/t/p/w500\(movie.poster_path)"))
-            { image in image
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-            } placeholder: {
-                Color.gray.opacity(0.3)
-                Text("Image Loading!")
-            }
-            .frame(width: UIScreen.main.bounds.width * 0.45)
-            .cornerRadius(15)
+            moviePosterView(posterPath: movie.poster_path)
             
             VStack{
                 Text(movie.title)
@@ -38,7 +29,7 @@ struct MovieDetailsView: View {
                 Button {print("Adding to watchlist?")} label: {
                     Label("Add to watchlist", systemImage: "person.fill")
                         .padding()
-                        .background(.pink)
+                        .background(.gray)
                         .cornerRadius(10)
                 }
             }
@@ -48,13 +39,6 @@ struct MovieDetailsView: View {
     }
 }
 
-private let sampleMovie = MovieData(
-    title: "Inception",
-    overview: "Cobb, a skilled thief who commits corporate espionage by infiltrating the subconscious of his targets is offered a chance to regain his old life as payment for a task considered to be impossible: \"inception\", the implantation of another person's idea into a target's subconscious.",
-    poster_path: "/6WxhEvFsauuACfv8HyoVX6mZKFj.jpg",
-    id: 42
-)
-
 #Preview {
-    MovieDetailsView(movie: sampleMovie)
+    MovieDetailsView(movie: sampleMovie1)
 }

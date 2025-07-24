@@ -14,7 +14,7 @@ let apiAccessToken = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmNmUwZTRhMDQ3YzQxM2UxM2M1Z
 struct MovieData: Codable, Identifiable, Hashable {
     let title: String
     let overview: String
-    let poster_path: String
+    let poster_path: String?
     let id: Int
 }
 

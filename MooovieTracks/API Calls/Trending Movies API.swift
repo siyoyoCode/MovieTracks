@@ -49,6 +49,7 @@ func getTrendingMovies() async throws -> [MovieData] {
         return movieResponse.results
         
     } catch {
+        print("Decoding error:", error)
         throw APIError.decoderFailed
     }
 }

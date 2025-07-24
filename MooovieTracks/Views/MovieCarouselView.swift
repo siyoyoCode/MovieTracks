@@ -61,7 +61,7 @@ struct MovieCarouselView: View {
                     movie in MovieCard(movie: movie, onSelect: {selectedMovie = movie})
                 }
             }
-            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
+            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
             .navigationDestination(item: $selectedMovie) {
                 movie in MovieDetailsView(movie: movie)
             }

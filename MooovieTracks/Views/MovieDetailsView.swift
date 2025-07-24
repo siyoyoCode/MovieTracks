@@ -33,6 +33,15 @@ struct MovieDetailsView: View {
                     .font(.subheadline)
                     .padding(.bottom, 10)
             }
+            
+            HStack{
+                Button {print("Adding to watchlist?")} label: {
+                    Label("Add to watchlist", systemImage: "person.fill")
+                        .padding()
+                        .background(.pink)
+                        .cornerRadius(10)
+                }
+            }
         }
         .frame(width: UIScreen.main.bounds.width * 0.9) //automatically configures to users width
 

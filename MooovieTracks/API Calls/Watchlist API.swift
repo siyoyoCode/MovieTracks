@@ -13,7 +13,7 @@ func getWatchlist(accountID: Int, sessionID: String) async throws -> [MovieData]
     
     //query components
     var components = URLComponents(url: url, resolvingAgainstBaseURL: true)!
-    var queryItems = [URLQueryItem(name: "session_id", value: sessionID)]
+    let queryItems = [URLQueryItem(name: "session_id", value: sessionID)]
     components.queryItems = queryItems
 
     //request

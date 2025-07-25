@@ -10,6 +10,7 @@ import SwiftUI
 struct SearchView: View {
     @State private var userSearch = ""
     @State private var searchResults: [MovieData] = []
+    @State private var searchedYet: Bool = false
     
     var body: some View {
     
@@ -26,6 +27,8 @@ struct SearchView: View {
                             for movie in searchResults {
                                 print("title: \(movie.title)")
                             }
+                            
+                            searchedYet = true
                         } catch {
                             print("API Search Database failed")
                         }
@@ -48,6 +51,9 @@ struct SearchView: View {
                 MovieScrollerView(movieSearchResults: searchResults)
 
             }
+        } else if searchedYet {
+            Text("No such title. Please try another title.")
+                .font(.subheadline)
         }
     }
         

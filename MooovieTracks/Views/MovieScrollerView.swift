@@ -7,7 +7,7 @@
 import SwiftUI
 
 struct MovieScrollerView: View {
-    @State var movieSearchResults: [MovieData]
+    let movieSearchResults: [MovieData]
     @State private var selectedMovie: MovieData?
     
     var body: some View {

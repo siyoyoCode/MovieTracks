@@ -27,6 +27,7 @@ struct WelcomeScreenView: View {
                         
                     NavigationLink(destination: HomeScreenView()) {
                         Label("Continue as a guest!", systemImage: "movieclapper.fill")
+                            .frame(width: 300, height: 50)
                             .modifier(WelcomeScreenButtonStyle())
                     }
                     
@@ -39,6 +40,7 @@ struct WelcomeScreenView: View {
                         
                     } label: {
                         Label("Login with TMDB!", systemImage: "person.fill")
+                            .frame(width: 300, height: 50)
                             .modifier(WelcomeScreenButtonStyle())
                     }
                 }

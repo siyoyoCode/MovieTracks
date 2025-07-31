@@ -43,9 +43,24 @@ struct WelcomeScreenButtonStyle: ViewModifier {
         content
             .font(.headline)
             .foregroundColor(.white)
-            .frame(width: 300, height: 50)
             .background(Color.brown)
             .cornerRadius(10)
+    }
+}
+
+//movie details buttons
+struct MovieDetailsButtonStyle: ViewModifier {
+    let userScreenWidth: Double
+    let buttonHeight: Double
+    
+    func body(content: Content) -> some View {
+        content
+            .frame(width: (userScreenWidth * 0.85)/2, height: buttonHeight)
+            .foregroundColor(.white)
+            .background(Color.brown)
+            .cornerRadius(10)
+            .font(.system(size: buttonHeight * 0.33))
+
     }
 }
 

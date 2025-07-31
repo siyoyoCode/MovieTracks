@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MovieDetailsView: View {
     let movie: MovieData
+    let userScreenWidth: Double = UIScreen.main.bounds.width
 
     var body: some View {
         
@@ -27,14 +28,18 @@ struct MovieDetailsView: View {
             
             HStack{
                 Button {print("Adding to watchlist?")} label: {
-                    Label("Add to watchlist", systemImage: "person.fill")
-                        .padding()
-                        .background(.gray)
-                        .cornerRadius(10)
+                    Label("Add to watchlist", systemImage: "plus.circle")
+                        .modifier(MovieDetailsButtonStyle(userScreenWidth: userScreenWidth, buttonHeight: 50))
+                }
+                
+                Button {print("Already Watched")} label: {
+                    Label("Already Watched", systemImage: "movieclapper")
+                        .modifier(MovieDetailsButtonStyle(userScreenWidth: userScreenWidth, buttonHeight: 50))
+                        .symbolEffect(.bounce.up.wholeSymbol, options: .nonRepeating)
                 }
             }
         }
-        .frame(width: UIScreen.main.bounds.width * 0.9) //automatically configures to users width
+        .frame(width: userScreenWidth * 0.9) //automatically configures to users width
 
     }
 }
@@ -42,3 +47,4 @@ struct MovieDetailsView: View {
 #Preview {
     MovieDetailsView(movie: sampleMovie1)
 }
+
